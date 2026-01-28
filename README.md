@@ -90,18 +90,6 @@ To run the full system locally, please follow the steps for both the Backend and
     pip install -r requirements.txt
     ```
 
-4.  **Database Migration**
-    ```bash
-    python manage.py makemigrations
-    python manage.py migrate
-    ```
-
-5.  **Run API Server**
-    ```bash
-    python manage.py runserver
-    ```
-    *The Backend is now running at `http://127.0.0.1:8000/`*
-
 ### **Step 2: Frontend Setup (Dashboard)**
 
 1.  **Clone the Dashboard Repository** (Open a new terminal)
