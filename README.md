@@ -1,10 +1,3 @@
-這里為你準備了中英雙語版本的 `README.md`。這種格式非常適合放在 GitHub 上，讓不同語言的讀者都能輕鬆理解你的 FYP 項目。
-
-你可以直接複製以下內容到你的 `README.md` 文件中：
-
----
-
-```markdown
 # AI-Driven Job Market Analysis, Recommendation, and Skill Training Framework
 # 人工智能驅動的就業市場分析、工作推薦與技能培訓框架
 
@@ -136,9 +129,3 @@ This project is a Final Year Project submitted to **Asia Pacific University of T
 
 * **Supervisor**: Ms. Salasiah Binti Sulaiman
 * **Second Marker**: Mr. Justin Gilbert A/L Alexius Silvester
-
----
-
-```
-
-```
