@@ -106,11 +106,7 @@ To run the full system locally, please follow the steps for both the Backend and
     yarn install
     ```
 
-3.  **Configure API Connection**
-    * Locate the configuration file (e.g., `.env` or `config.js`).
-    * Ensure the `API_BASE_URL` is set to `http://127.0.0.1:8000/`.
-
-4.  **Run Dashboard**
+3.  **Run Dashboard**
     ```bash
     npm start
     ```
