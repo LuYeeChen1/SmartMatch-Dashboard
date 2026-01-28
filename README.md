@@ -112,15 +112,6 @@ python manage.py runserver
 
 Access the application at / 訪問應用地址: `http://127.0.0.1:8000/`
 
----
-
-## 📊 System Architecture / 系統架構
-
-The system utilizes a **Model-View-Template (MVT)** architecture provided by Django. The AI modules operate as integrated services that process data from the database and return recommendations to the view layer.
-
-本系統採用 Django 提供的 **模型-視圖-模板 (MVT)** 架構。AI 模塊作為集成服務運行，處理來自數據庫的數據並將推薦結果返回給視圖層。
-
----
 
 ## 📄 License & Acknowledgments / 許可與致謝
 
