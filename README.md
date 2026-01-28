@@ -53,7 +53,6 @@ The system operates on a separated architecture ensuring scalability and maintai
 * **Framework**: Python, Django, Django REST Framework (DRF)
 * **AI & ML**: PyTorch, Large Language Models (LLMs), Scikit-learn (Resume Parsing & Matching)
 * **Database**: PostgreSQL / SQLite (Managed via Django ORM)
-* **Deployment**: Gunicorn, Nginx
 
 ### **2. Frontend (Dashboard)**
 * **UI Framework**: HTML5, CSS3, JavaScript (Modern Responsive Design)
