@@ -1,10 +1,23 @@
-# AI-Driven Job Market Analysis, Recommendation, and Skill Training Framework
-# 人工智能驅動的就業市場分析、工作推薦與技能培訓框架
+# SmartMatch: AI-Driven Job Market Analysis & Recommendation Framework
+# SmartMatch: 人工智能驅動的就業市場分析與推薦框架
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-success)
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Django](https://img.shields.io/badge/Django-Framework-green)
+![Django](https://img.shields.io/badge/Backend-Django%20REST-green)
+![Frontend](https://img.shields.io/badge/Frontend-Dashboard-blueviolet)
 ![AI](https://img.shields.io/badge/AI-PyTorch%20%7C%20LLM-orange)
+
+## 📂 Repository Access / 倉庫訪問導航
+
+This project is architected as a decoupled system. Please access the specific repositories below for source code.
+本項目採用前後端分離架構。請點擊下方鏈接訪問具體源代碼。
+
+| Component | Repository Link | Description |
+| :--- | :--- | :--- |
+| **Frontend (Dashboard)** | [**SmartMatch-Dashboard**](https://github.com/LuYeeChen1/SmartMatch-Dashboard.git) | User Interface for job seekers and admins. <br> (求職者與管理員使用的前端儀表盤) |
+| **Backend (Core API)** | [**SmartMatch-Core-API**](https://github.com/LuYeeChen1/SmartMatch-Core-API.git) | RESTful API, AI Engine, and Database Logic. <br> (核心 API、AI 引擎與數據庫邏輯) |
+
+---
 
 ## 📖 Abstract / 摘要
 
@@ -14,104 +27,120 @@ This project addresses the critical issue of youth unemployment in Malaysia by l
 2.  **Recommends** suitable jobs to candidates based on their profiles.
 3.  **Identifies Skill Gaps** and suggests relevant training programs to enhance employability.
 
-The solution aims to reduce skill mismatches and provide data-driven insights for both job seekers and policy makers.
-
 **中文**
 本項目旨在利用人工智能（AI）技術縮小求職者與市場需求之間的差距，從而解決馬來西亞青年失業這一關鍵問題。該系統提供了一個綜合框架，能夠：
 1.  **分析** 利用實時數據分析當前的就業市場趨勢。
 2.  **推薦** 根據候選人的個人資料推薦合適的工作。
 3.  **識別技能差距** 並建議相關的培訓課程以提升就業能力。
 
-該方案旨在減少技能不匹配問題，並為求職者和政策制定者提供數據驅動的洞察。
-
 ---
 
 ## 📌 Project Information / 項目信息
 
-* **Title / 標題**: Developing an AI-Driven Job Market Analysis, Job Recommendation, and Skill Training Framework to Address Youth Unemployment in Malaysia.
-* **Author / 作者**: Lu Yee Chen (TP067683)
-* **Institution / 機構**: Asia Pacific University of Technology and Innovation (APU)
-* **Supervisor / 導師**: Salasiah Binti Sulaiman
-
----
-
-## ✨ Key Features / 主要功能
-
-| Feature (English) | 功能 (中文) |
-| :--- | :--- |
-| **Market Trend Analysis** | **市場趨勢分析**：可視化馬來西亞的高需求職位和新興行業。 |
-| **Intelligent Job Recommendation** | **智能工作推薦**：使用 AI 算法將用戶資料（技能、學歷）與現有職位進行匹配。 |
-| **Skill Gap Analysis** | **技能差距分析**：自動檢測目標職位所需的缺失技能。 |
-| **Training Recommendations** | **培訓推薦**：建議相關課程和認證以彌補識別出的技能差距。 |
-| **User Profiling** | **用戶畫像**：綜合管理候選人檔案，包括簡歷解析和技能標籤。 |
+* **Title**: Developing an AI-Driven Job Market Analysis, Job Recommendation, and Skill Training Framework.
+* **Author**: Lu Yee Chen (TP067683)
+* **Institution**: Asia Pacific University of Technology and Innovation (APU)
+* **Supervisor**: Salasiah Binti Sulaiman
 
 ---
 
 ## 🛠 Tech Stack / 技術棧
 
-This project is built using a robust full-stack architecture integrated with AI modules.
-本項目採用集成了 AI 模塊的穩健全棧架構構建。
+The system operates on a separated architecture ensuring scalability and maintainability.
+系統採用分離式架構運行，確保可擴展性和可維護性。
 
-| Component | Technologies / 技術 |
-| :--- | :--- |
-| **Backend** | Python, Django, Gunicorn |
-| **Frontend** | HTML5, CSS3, JavaScript (Bootstrap/Tailwind) |
-| **AI & ML** | PyTorch, Large Language Models (LLMs), Scikit-learn |
-| **Database** | PostgreSQL / SQLite (Managed via Django ORM & SQLAlchemy) |
-| **Deployment** | Nginx, Gunicorn, Docker (Optional) |
-| **Tools** | PyCharm, Git |
+### **1. Backend (Core API)**
+* **Framework**: Python, Django, Django REST Framework (DRF)
+* **AI & ML**: PyTorch, Large Language Models (LLMs), Scikit-learn (Resume Parsing & Matching)
+* **Database**: PostgreSQL / SQLite (Managed via Django ORM)
+* **Deployment**: Gunicorn, Nginx
+
+### **2. Frontend (Dashboard)**
+* **UI Framework**: HTML5, CSS3, JavaScript (Modern Responsive Design)
+* **Visualization**: Chart.js / D3.js (For Market Trend Analytics)
+* **HTTP Client**: Axios / Fetch API
 
 ---
 
 ## 🚀 Installation & Setup / 安裝與設置
 
-Follow these steps to set up the project locally.
-請按照以下步驟在本地設置項目。
+To run the full system locally, please follow the steps for both the Backend and Frontend.
+要在本地運行完整系統，請分別按照後端和前端的步驟進行操作。
 
-### 1. Clone the Repository / 克隆倉庫
-```bash
-git clone [https://github.com/LuYeeChen1/FYP-Job-Market-Analysis.git](https://github.com/LuYeeChen1/FYP-Job-Market-Analysis.git)
-cd FYP-Job-Market-Analysis
+### **Step 1: Backend Setup (Core API)**
 
-```
+1.  **Clone the API Repository**
+    ```bash
+    git clone [https://github.com/LuYeeChen1/SmartMatch-Core-API.git](https://github.com/LuYeeChen1/SmartMatch-Core-API.git)
+    cd SmartMatch-Core-API
+    ```
 
-### 2. Create Virtual Environment / 創建虛擬環境
+2.  **Create & Activate Virtual Environment**
+    ```bash
+    # Windows
+    python -m venv venv
+    venv\Scripts\activate
 
-```bash
-# Windows
-python -m venv venv
-venv\Scripts\activate
+    # Mac/Linux
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
 
-# Mac/Linux
-python3 -m venv venv
-source venv/bin/activate
+3.  **Install Dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-```
+4.  **Database Migration**
+    ```bash
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
 
-### 3. Install Dependencies / 安裝依賴
+5.  **Run API Server**
+    ```bash
+    python manage.py runserver
+    ```
+    *The Backend is now running at `http://127.0.0.1:8000/`*
 
-```bash
-pip install -r requirements.txt
+### **Step 2: Frontend Setup (Dashboard)**
 
-```
+1.  **Clone the Dashboard Repository** (Open a new terminal)
+    ```bash
+    git clone [https://github.com/LuYeeChen1/SmartMatch-Dashboard.git](https://github.com/LuYeeChen1/SmartMatch-Dashboard.git)
+    cd SmartMatch-Dashboard
+    ```
 
-### 4. Database Migration / 數據庫遷移
+2.  **Install Dependencies**
+    *(Depending on your frontend structure, use npm or simple file hosting)*
+    ```bash
+    npm install
+    # OR if using Yarn
+    yarn install
+    ```
 
-```bash
-python manage.py makemigrations
-python manage.py migrate
+3.  **Configure API Connection**
+    * Locate the configuration file (e.g., `.env` or `config.js`).
+    * Ensure the `API_BASE_URL` is set to `http://127.0.0.1:8000/`.
 
-```
+4.  **Run Dashboard**
+    ```bash
+    npm start
+    ```
+    *The Frontend is now accessible (usually at `http://localhost:3000` or similar).*
 
-### 5. Run the Server / 運行服務器
+---
 
-```bash
-python manage.py runserver
+## 📊 System Architecture / 系統架構
 
-```
+The system utilizes a **Model-View-Template (MVT)** architecture (Backend) coupled with a **SPA (Single Page Application)** or **Responsive Frontend**.
 
-Access the application at / 訪問應用地址: `http://127.0.0.1:8000/`
+1.  **Data Layer**: Stores job postings, user profiles, and training data.
+2.  **AI Engine Layer**: Processes resumes, calculates compatibility scores, and predicts trends.
+3.  **API Layer**: Exposes endpoints for the frontend to consume data.
+4.  **Presentation Layer**: Displays analytics and recommendations to the user.
 
+---
 
 ## 📄 License & Acknowledgments / 許可與致謝
 
@@ -120,3 +149,5 @@ This project is a Final Year Project submitted to **Asia Pacific University of T
 
 * **Supervisor**: Ms. Salasiah Binti Sulaiman
 * **Second Marker**: Mr. Justin Gilbert A/L Alexius Silvester
+
+---
